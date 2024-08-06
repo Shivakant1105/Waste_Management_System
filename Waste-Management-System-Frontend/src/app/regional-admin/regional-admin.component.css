@@ -1,0 +1,65 @@
+.container {
+  background-color: #f2f2f2;
+  padding: 70px;
+  border-radius: 15px;
+  padding-top: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.main-page {
+  height: 100vh;
+  display: flex;
+}
+
+.main-page-container {
+  margin: auto;
+  width: 100%;
+}
+
+body {
+  background-color: #e6e6e6;
+  margin: 0;
+}
+
+button {
+  outline: none;
+}
+
+.parent-flex {
+  display: flex;
+}
+
+.childflex1 {
+  flex: 7;
+}
+
+.map-and-driver-list-parent {
+  display: flex;
+}
+
+.map-of-parent {
+  flex: 7;
+  margin-right: 5px;
+  border: 1px solid black;
+}
+
+.list-of-drivers {
+  flex: 3;
+  margin-left: 5px;
+  height: 500px;
+}
+
+/* hr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 2px;
+    background: black;
+    margin-bottom: 50px;
+} */

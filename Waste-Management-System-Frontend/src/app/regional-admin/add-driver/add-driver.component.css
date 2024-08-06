@@ -1,0 +1,16 @@
+button {
+  outline: none;
+}
+
+body {
+  padding: 30px;
+  height: 100vh;
+}
+
+.parent-flex {
+  display: flex;
+}
+
+.child-flex {
+  flex: 1;
+}

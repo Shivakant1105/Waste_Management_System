@@ -1,0 +1,204 @@
+<body>
+  <br /><br /><br /><br />
+
+  <div class="card mt-3">
+    <div class="card-header"><h2>Request form to collect the Waste</h2></div>
+    <div class="card-body">
+      <form
+        (ngSubmit)="submitForm()"
+        #requestForm="ngForm"
+        *ngIf="!isFormSubmitted"
+      >
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            [(ngModel)]="customer.name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email-Id:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="eamil"
+            name="eamil"
+            [(ngModel)]="customer.email"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="pickupAdress" class="form-label">Pickup Address:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="pickupLocation"
+            name="pickupLocation"
+            [(ngModel)]="customer.address"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="date" class="form-label">Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="date"
+            name="date"
+            [(ngModel)]="customer.date"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="time" class="form-label">Time:</label>
+          <input
+            type="time"
+            class="form-control"
+            id="time"
+            name="time"
+            [(ngModel)]="customer.time"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="garbageType" class="form-label">Garbage Type:</label>
+          <select
+            class="form-select"
+            id="garbageType"
+            name="garbageType"
+            [(ngModel)]="customer.garbageType"
+            required
+          >
+            <option value="">Select garbage type</option>
+            <option value="Organic">Organic</option>
+            <option value="Recyclable">Recyclable</option>
+            <option value="Hazardous">Hazardous</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!requestForm.form.valid"
+        >
+          Submit Request
+        </button> -->
+      </form>
+
+      <div class="card1 mt-3" *ngIf="isFormSubmitted">
+        <div class="card-body">
+          <h5 class="card-title">Submit form</h5>
+          <p class="card-text">Your form is submitted successfully.</p>
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!--==========================
+    Footer
+  ============================-->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-info">
+          <h3>WMS</h3>
+          <p>
+            Waste Management System collects the waste throughout the region
+            efficiently. this saves the feul consumption, man power and energy.
+            This user friendly system helps keep our country clean.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+            <li>
+              <i class="ion-ios-arrow-right"></i> <a href="#">About us</a>
+            </li>
+            <li>
+              <i class="ion-ios-arrow-right"></i> <a href="#">Services</a>
+            </li>
+            <li>
+              <i class="ion-ios-arrow-right"></i>
+              <a href="#">Terms of service</a>
+            </li>
+            <li>
+              <i class="ion-ios-arrow-right"></i>
+              <a href="#">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            College of Abes Engineering College <br />
+            Ghaziabad<br />
+            Uttar Pradesh <br />
+            <strong>Phone:</strong> +1 5589 55488 55<br />
+            <strong>Email:</strong> mail@wms.com<br />
+          </p>
+
+          <div class="social-links">
+            <a href="https://www.abes.ac.in/" class="twitter"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.abes.ac.in/" class="facebook"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.abes.ac.in/" class="instagram"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://www.abes.ac.in/" class="google-plus"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.abes.ac.in/" class="linkedin"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>News Letter Details</p>
+          <form action="" method="post">
+            <input type="email" name="email" /><input
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong>WMS</strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+          -->
+      Designed by <a href="">Shiva Kant</a>
+    </div>
+  </div>
+</footer>
+<!-- #footer -->

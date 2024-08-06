@@ -1,0 +1,24 @@
+.card {
+  width: 70rem;
+  padding-top: 30px;
+  margin: auto;
+  height: 74%;
+  background-color: #b6becf;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 25px;
+}
+
+body {
+  display: flex;
+  height: 130vh;
+  background-color: #e6e6e6;
+}
+
+.column {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.left-column {
+  border-right: 1px solid lightgray;
+}

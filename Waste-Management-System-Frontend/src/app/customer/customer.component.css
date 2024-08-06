@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+  width: 25rem;
+  padding: 25px;
+  height: 45rem;
+  background-color: #b6becf;
+  margin: auto;
+
+  /* top: 8%; */
+  border-radius: 15px;
+  /* bottom: 20%;*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+body {
+  background-color: #e6e6e6;
+  margin: 0;
+  height: 150vh;
+}
+.card1 {
+  top: 2%;
+  position: absolute;
+  width: 25rem;
+  text-align: center;
+  padding: 15px;
+  height: 15rem;
+  background-color: #6adb82;
+  margin: auto;
+
+  /* top: 8%; */
+  border-radius: 15px;
+  /* bottom: 20%;*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
